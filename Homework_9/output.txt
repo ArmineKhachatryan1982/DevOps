@@ -1,0 +1,73 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "lambdaUser1",
+        "RoleId": "AROA3FLD3DA66XPDAWNTV",
+        "Arn": "arn:aws:iam::767397926973:role/lambdaUser1",
+        "CreateDate": "2024-03-09T05:43:56+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "lambda.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}
+{
+    "FunctionName": "MyLambdaFunction",
+    "FunctionArn": "arn:aws:lambda:us-east-1:767397926973:function:MyLambdaFunction",
+    "Runtime": "python3.8",
+    "Role": "arn:aws:iam::767397926973:role/lambdaUser1",
+    "Handler": "lambda_function.py",
+    "CodeSize": 307,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2024-03-09T06:12:07.227+0000",
+    "CodeSha256": "pA59TwvrCx3fOcItJaWolhmWvB4EZAD+ijVRUGjDx+w=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "c2085c90-55e4-4f05-ba42-db8f11a69bf1",
+    "State": "Pending",
+    "StateReason": "The function is being created.",
+    "StateReasonCode": "Creating",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:b20481443932830049531ab20faaf09295061aff7a67a0b0f40496e5e1ddec59"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/MyLambdaFunction"
+    }
+}
+{
+    "id": "r4bigg2i2i",
+    "name": "myApiName",
+    "createdDate": "2024-03-09T10:44:19+04:00",
+    "apiKeySource": "HEADER",
+    "endpointConfiguration": {
+        "types": [
+            "EDGE"
+        ]
+    },
+    "disableExecuteApiEndpoint": false,
+    "rootResourceId": "x51b4jea8l"
+}
